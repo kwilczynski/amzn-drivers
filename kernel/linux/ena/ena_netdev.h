@@ -279,7 +279,6 @@ enum ena_flags_t {
 	ENA_FLAG_DEVICE_RUNNING,
 	ENA_FLAG_DEV_UP,
 	ENA_FLAG_LINK_UP,
-	ENA_FLAG_MSIX_ENABLED,
 	ENA_FLAG_TRIGGER_RESET
 };
 
@@ -298,7 +297,6 @@ struct ena_adapter {
 
 	int num_queues;
 
-	struct msix_entry *msix_entries;
 	int msix_vecs;
 
 	u32 missing_tx_completion_threshold;
